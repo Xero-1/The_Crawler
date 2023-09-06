@@ -1,0 +1,1 @@
+/usr/bin/c++ "CMakeFiles/The-crawler.dir/src/Main.cpp.o" -o The-crawler  -Wl,-rpath,/home/lsd/Proyectos/TheCrawler/build/inc -lncurses inc/libGame.so 

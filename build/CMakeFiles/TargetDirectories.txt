@@ -1,0 +1,6 @@
+/home/lsd/Proyectos/TheCrawler/build/CMakeFiles/The-crawler.dir
+/home/lsd/Proyectos/TheCrawler/build/CMakeFiles/edit_cache.dir
+/home/lsd/Proyectos/TheCrawler/build/CMakeFiles/rebuild_cache.dir
+/home/lsd/Proyectos/TheCrawler/build/inc/CMakeFiles/Game.dir
+/home/lsd/Proyectos/TheCrawler/build/inc/CMakeFiles/edit_cache.dir
+/home/lsd/Proyectos/TheCrawler/build/inc/CMakeFiles/rebuild_cache.dir
