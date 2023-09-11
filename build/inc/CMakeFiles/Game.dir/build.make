@@ -125,10 +125,38 @@ inc/CMakeFiles/Game.dir/__/src/Ui.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Game.dir/__/src/Ui.cpp.s"
 	cd /home/lsd/Proyectos/TheCrawler/build/inc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lsd/Proyectos/TheCrawler/src/Ui.cpp -o CMakeFiles/Game.dir/__/src/Ui.cpp.s
 
+inc/CMakeFiles/Game.dir/__/src/UI_Inputs.cpp.o: inc/CMakeFiles/Game.dir/flags.make
+inc/CMakeFiles/Game.dir/__/src/UI_Inputs.cpp.o: /home/lsd/Proyectos/TheCrawler/src/UI_Inputs.cpp
+inc/CMakeFiles/Game.dir/__/src/UI_Inputs.cpp.o: inc/CMakeFiles/Game.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/lsd/Proyectos/TheCrawler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object inc/CMakeFiles/Game.dir/__/src/UI_Inputs.cpp.o"
+	cd /home/lsd/Proyectos/TheCrawler/build/inc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT inc/CMakeFiles/Game.dir/__/src/UI_Inputs.cpp.o -MF CMakeFiles/Game.dir/__/src/UI_Inputs.cpp.o.d -o CMakeFiles/Game.dir/__/src/UI_Inputs.cpp.o -c /home/lsd/Proyectos/TheCrawler/src/UI_Inputs.cpp
+
+inc/CMakeFiles/Game.dir/__/src/UI_Inputs.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Game.dir/__/src/UI_Inputs.cpp.i"
+	cd /home/lsd/Proyectos/TheCrawler/build/inc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lsd/Proyectos/TheCrawler/src/UI_Inputs.cpp > CMakeFiles/Game.dir/__/src/UI_Inputs.cpp.i
+
+inc/CMakeFiles/Game.dir/__/src/UI_Inputs.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Game.dir/__/src/UI_Inputs.cpp.s"
+	cd /home/lsd/Proyectos/TheCrawler/build/inc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lsd/Proyectos/TheCrawler/src/UI_Inputs.cpp -o CMakeFiles/Game.dir/__/src/UI_Inputs.cpp.s
+
+inc/CMakeFiles/Game.dir/__/src/UI_Displays.cpp.o: inc/CMakeFiles/Game.dir/flags.make
+inc/CMakeFiles/Game.dir/__/src/UI_Displays.cpp.o: /home/lsd/Proyectos/TheCrawler/src/UI_Displays.cpp
+inc/CMakeFiles/Game.dir/__/src/UI_Displays.cpp.o: inc/CMakeFiles/Game.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/lsd/Proyectos/TheCrawler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object inc/CMakeFiles/Game.dir/__/src/UI_Displays.cpp.o"
+	cd /home/lsd/Proyectos/TheCrawler/build/inc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT inc/CMakeFiles/Game.dir/__/src/UI_Displays.cpp.o -MF CMakeFiles/Game.dir/__/src/UI_Displays.cpp.o.d -o CMakeFiles/Game.dir/__/src/UI_Displays.cpp.o -c /home/lsd/Proyectos/TheCrawler/src/UI_Displays.cpp
+
+inc/CMakeFiles/Game.dir/__/src/UI_Displays.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Game.dir/__/src/UI_Displays.cpp.i"
+	cd /home/lsd/Proyectos/TheCrawler/build/inc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lsd/Proyectos/TheCrawler/src/UI_Displays.cpp > CMakeFiles/Game.dir/__/src/UI_Displays.cpp.i
+
+inc/CMakeFiles/Game.dir/__/src/UI_Displays.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Game.dir/__/src/UI_Displays.cpp.s"
+	cd /home/lsd/Proyectos/TheCrawler/build/inc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lsd/Proyectos/TheCrawler/src/UI_Displays.cpp -o CMakeFiles/Game.dir/__/src/UI_Displays.cpp.s
+
 inc/CMakeFiles/Game.dir/__/src/Item.cpp.o: inc/CMakeFiles/Game.dir/flags.make
 inc/CMakeFiles/Game.dir/__/src/Item.cpp.o: /home/lsd/Proyectos/TheCrawler/src/Item.cpp
 inc/CMakeFiles/Game.dir/__/src/Item.cpp.o: inc/CMakeFiles/Game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/lsd/Proyectos/TheCrawler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object inc/CMakeFiles/Game.dir/__/src/Item.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/lsd/Proyectos/TheCrawler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object inc/CMakeFiles/Game.dir/__/src/Item.cpp.o"
 	cd /home/lsd/Proyectos/TheCrawler/build/inc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT inc/CMakeFiles/Game.dir/__/src/Item.cpp.o -MF CMakeFiles/Game.dir/__/src/Item.cpp.o.d -o CMakeFiles/Game.dir/__/src/Item.cpp.o -c /home/lsd/Proyectos/TheCrawler/src/Item.cpp
 
 inc/CMakeFiles/Game.dir/__/src/Item.cpp.i: cmake_force
@@ -142,7 +170,7 @@ inc/CMakeFiles/Game.dir/__/src/Item.cpp.s: cmake_force
 inc/CMakeFiles/Game.dir/__/src/Armor.cpp.o: inc/CMakeFiles/Game.dir/flags.make
 inc/CMakeFiles/Game.dir/__/src/Armor.cpp.o: /home/lsd/Proyectos/TheCrawler/src/Armor.cpp
 inc/CMakeFiles/Game.dir/__/src/Armor.cpp.o: inc/CMakeFiles/Game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/lsd/Proyectos/TheCrawler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object inc/CMakeFiles/Game.dir/__/src/Armor.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/lsd/Proyectos/TheCrawler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object inc/CMakeFiles/Game.dir/__/src/Armor.cpp.o"
 	cd /home/lsd/Proyectos/TheCrawler/build/inc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT inc/CMakeFiles/Game.dir/__/src/Armor.cpp.o -MF CMakeFiles/Game.dir/__/src/Armor.cpp.o.d -o CMakeFiles/Game.dir/__/src/Armor.cpp.o -c /home/lsd/Proyectos/TheCrawler/src/Armor.cpp
 
 inc/CMakeFiles/Game.dir/__/src/Armor.cpp.i: cmake_force
@@ -156,7 +184,7 @@ inc/CMakeFiles/Game.dir/__/src/Armor.cpp.s: cmake_force
 inc/CMakeFiles/Game.dir/__/src/Weapon.cpp.o: inc/CMakeFiles/Game.dir/flags.make
 inc/CMakeFiles/Game.dir/__/src/Weapon.cpp.o: /home/lsd/Proyectos/TheCrawler/src/Weapon.cpp
 inc/CMakeFiles/Game.dir/__/src/Weapon.cpp.o: inc/CMakeFiles/Game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/lsd/Proyectos/TheCrawler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object inc/CMakeFiles/Game.dir/__/src/Weapon.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/lsd/Proyectos/TheCrawler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object inc/CMakeFiles/Game.dir/__/src/Weapon.cpp.o"
 	cd /home/lsd/Proyectos/TheCrawler/build/inc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT inc/CMakeFiles/Game.dir/__/src/Weapon.cpp.o -MF CMakeFiles/Game.dir/__/src/Weapon.cpp.o.d -o CMakeFiles/Game.dir/__/src/Weapon.cpp.o -c /home/lsd/Proyectos/TheCrawler/src/Weapon.cpp
 
 inc/CMakeFiles/Game.dir/__/src/Weapon.cpp.i: cmake_force
@@ -170,7 +198,7 @@ inc/CMakeFiles/Game.dir/__/src/Weapon.cpp.s: cmake_force
 inc/CMakeFiles/Game.dir/__/src/Inventory.cpp.o: inc/CMakeFiles/Game.dir/flags.make
 inc/CMakeFiles/Game.dir/__/src/Inventory.cpp.o: /home/lsd/Proyectos/TheCrawler/src/Inventory.cpp
 inc/CMakeFiles/Game.dir/__/src/Inventory.cpp.o: inc/CMakeFiles/Game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/lsd/Proyectos/TheCrawler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object inc/CMakeFiles/Game.dir/__/src/Inventory.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/lsd/Proyectos/TheCrawler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object inc/CMakeFiles/Game.dir/__/src/Inventory.cpp.o"
 	cd /home/lsd/Proyectos/TheCrawler/build/inc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT inc/CMakeFiles/Game.dir/__/src/Inventory.cpp.o -MF CMakeFiles/Game.dir/__/src/Inventory.cpp.o.d -o CMakeFiles/Game.dir/__/src/Inventory.cpp.o -c /home/lsd/Proyectos/TheCrawler/src/Inventory.cpp
 
 inc/CMakeFiles/Game.dir/__/src/Inventory.cpp.i: cmake_force
@@ -184,7 +212,7 @@ inc/CMakeFiles/Game.dir/__/src/Inventory.cpp.s: cmake_force
 inc/CMakeFiles/Game.dir/__/src/Creature.cpp.o: inc/CMakeFiles/Game.dir/flags.make
 inc/CMakeFiles/Game.dir/__/src/Creature.cpp.o: /home/lsd/Proyectos/TheCrawler/src/Creature.cpp
 inc/CMakeFiles/Game.dir/__/src/Creature.cpp.o: inc/CMakeFiles/Game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/lsd/Proyectos/TheCrawler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object inc/CMakeFiles/Game.dir/__/src/Creature.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/lsd/Proyectos/TheCrawler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object inc/CMakeFiles/Game.dir/__/src/Creature.cpp.o"
 	cd /home/lsd/Proyectos/TheCrawler/build/inc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT inc/CMakeFiles/Game.dir/__/src/Creature.cpp.o -MF CMakeFiles/Game.dir/__/src/Creature.cpp.o.d -o CMakeFiles/Game.dir/__/src/Creature.cpp.o -c /home/lsd/Proyectos/TheCrawler/src/Creature.cpp
 
 inc/CMakeFiles/Game.dir/__/src/Creature.cpp.i: cmake_force
@@ -201,6 +229,8 @@ Game_OBJECTS = \
 "CMakeFiles/Game.dir/__/src/Character.cpp.o" \
 "CMakeFiles/Game.dir/__/src/Roll.cpp.o" \
 "CMakeFiles/Game.dir/__/src/Ui.cpp.o" \
+"CMakeFiles/Game.dir/__/src/UI_Inputs.cpp.o" \
+"CMakeFiles/Game.dir/__/src/UI_Displays.cpp.o" \
 "CMakeFiles/Game.dir/__/src/Item.cpp.o" \
 "CMakeFiles/Game.dir/__/src/Armor.cpp.o" \
 "CMakeFiles/Game.dir/__/src/Weapon.cpp.o" \
@@ -214,6 +244,8 @@ inc/libGame.so: inc/CMakeFiles/Game.dir/__/src/Game.cpp.o
 inc/libGame.so: inc/CMakeFiles/Game.dir/__/src/Character.cpp.o
 inc/libGame.so: inc/CMakeFiles/Game.dir/__/src/Roll.cpp.o
 inc/libGame.so: inc/CMakeFiles/Game.dir/__/src/Ui.cpp.o
+inc/libGame.so: inc/CMakeFiles/Game.dir/__/src/UI_Inputs.cpp.o
+inc/libGame.so: inc/CMakeFiles/Game.dir/__/src/UI_Displays.cpp.o
 inc/libGame.so: inc/CMakeFiles/Game.dir/__/src/Item.cpp.o
 inc/libGame.so: inc/CMakeFiles/Game.dir/__/src/Armor.cpp.o
 inc/libGame.so: inc/CMakeFiles/Game.dir/__/src/Weapon.cpp.o
@@ -221,7 +253,7 @@ inc/libGame.so: inc/CMakeFiles/Game.dir/__/src/Inventory.cpp.o
 inc/libGame.so: inc/CMakeFiles/Game.dir/__/src/Creature.cpp.o
 inc/libGame.so: inc/CMakeFiles/Game.dir/build.make
 inc/libGame.so: inc/CMakeFiles/Game.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/lsd/Proyectos/TheCrawler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX shared library libGame.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/lsd/Proyectos/TheCrawler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX shared library libGame.so"
 	cd /home/lsd/Proyectos/TheCrawler/build/inc && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Game.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

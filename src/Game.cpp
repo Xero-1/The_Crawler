@@ -5,16 +5,26 @@ Game::Game()
 	this->bPlay=false;
 	this->bGameover=false;
 }
-Game::~Game()
-{
-	endwin();
-}
+Game::~Game(){}
 
 void Game::init()
 {
 	this->bPlay=true;
 	this->bGameover=true;
 	srand(time(NULL));
+
+	Weapon w;
+	w.setName("Espada corta");
+	Dice d;
+	d.ROLLS=3;
+	d.FACES=6;
+	d.MOD=1;
+	w.setDamageDice(d);
+	cPlayer.getInv().addItem(w.clone());
+	Armor a;
+	a.setName("Armadura de placas");
+	a.setAC(6);
+	cPlayer.getInv().addItem(a.clone());
 }
 void Game::menuMain()
 {
@@ -49,6 +59,10 @@ void Game::input()
 		case 'q':
 		case 'Q':
 			this->bGameover=true;
+			break;
+		case 'i':
+		case 'I':
+			cUi.displayInventory(cPlayer.getInv().to_string());
 			break;
 		case 27://Esc
 			cPlayer.save();

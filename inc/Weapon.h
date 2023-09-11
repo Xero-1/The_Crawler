@@ -10,6 +10,7 @@ public:
 	Weapon();
 	~Weapon();
 	Weapon* clone()const;
+	std::string getTag() override;
 	//Getters and setters
 	inline Dice getDamageDice(){return this->eDamageDice;}
 	inline unsigned short int getRange(){return this->iRange;}

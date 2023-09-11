@@ -50,6 +50,7 @@ public:
 	inline unsigned int getInstinct(){return this->iInstinct;}
 	inline unsigned int getGold(){return this->iGold;}
 	inline Armor getArmor(){return this->cArmor;}
+	inline Inventory& getInv(){return this->cInv;}
 	inline void setRace(std::string s){this->sRace=s;}
 	inline void setProfession(std::string s){this->sProfession=s;}
 	inline void setMpMax(float f){this->fMpMax=f;}
@@ -73,6 +74,7 @@ private:
 	unsigned int iInstinct;
 	unsigned int iGold;
 	Armor cArmor;
+	Inventory cInv;
 };
 
 #endif

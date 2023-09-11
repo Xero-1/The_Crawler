@@ -14,6 +14,7 @@ public:
 	Item();
 	~Item();
 	virtual Item* clone()const=0;
+	inline virtual std::string getTag(){return "";};
 	//Getters and setters
 	inline std::string getName(){return this->sName;}
 	inline unsigned short int getType(){return this->iType;}

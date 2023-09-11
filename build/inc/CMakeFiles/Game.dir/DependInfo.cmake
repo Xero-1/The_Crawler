@@ -15,6 +15,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/lsd/Proyectos/TheCrawler/src/Inventory.cpp" "inc/CMakeFiles/Game.dir/__/src/Inventory.cpp.o" "gcc" "inc/CMakeFiles/Game.dir/__/src/Inventory.cpp.o.d"
   "/home/lsd/Proyectos/TheCrawler/src/Item.cpp" "inc/CMakeFiles/Game.dir/__/src/Item.cpp.o" "gcc" "inc/CMakeFiles/Game.dir/__/src/Item.cpp.o.d"
   "/home/lsd/Proyectos/TheCrawler/src/Roll.cpp" "inc/CMakeFiles/Game.dir/__/src/Roll.cpp.o" "gcc" "inc/CMakeFiles/Game.dir/__/src/Roll.cpp.o.d"
+  "/home/lsd/Proyectos/TheCrawler/src/UI_Displays.cpp" "inc/CMakeFiles/Game.dir/__/src/UI_Displays.cpp.o" "gcc" "inc/CMakeFiles/Game.dir/__/src/UI_Displays.cpp.o.d"
+  "/home/lsd/Proyectos/TheCrawler/src/UI_Inputs.cpp" "inc/CMakeFiles/Game.dir/__/src/UI_Inputs.cpp.o" "gcc" "inc/CMakeFiles/Game.dir/__/src/UI_Inputs.cpp.o.d"
   "/home/lsd/Proyectos/TheCrawler/src/Ui.cpp" "inc/CMakeFiles/Game.dir/__/src/Ui.cpp.o" "gcc" "inc/CMakeFiles/Game.dir/__/src/Ui.cpp.o.d"
   "/home/lsd/Proyectos/TheCrawler/src/Weapon.cpp" "inc/CMakeFiles/Game.dir/__/src/Weapon.cpp.o" "gcc" "inc/CMakeFiles/Game.dir/__/src/Weapon.cpp.o.d"
   )

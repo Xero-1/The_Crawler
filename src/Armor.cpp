@@ -10,3 +10,9 @@ Armor* Armor::clone() const
 {
 	return new Armor(*this);
 }
+std::string Armor::getTag()
+{
+	std::string s=getName();
+	s+="<+"+std::to_string(iAC)+">";
+	return s;
+}

@@ -298,6 +298,54 @@ __/src/Roll.cpp.s:
 	cd /home/lsd/Proyectos/TheCrawler/build && $(MAKE) $(MAKESILENT) -f inc/CMakeFiles/Game.dir/build.make inc/CMakeFiles/Game.dir/__/src/Roll.cpp.s
 .PHONY : __/src/Roll.cpp.s
 
+__/src/UI_Displays.o: __/src/UI_Displays.cpp.o
+.PHONY : __/src/UI_Displays.o
+
+# target to build an object file
+__/src/UI_Displays.cpp.o:
+	cd /home/lsd/Proyectos/TheCrawler/build && $(MAKE) $(MAKESILENT) -f inc/CMakeFiles/Game.dir/build.make inc/CMakeFiles/Game.dir/__/src/UI_Displays.cpp.o
+.PHONY : __/src/UI_Displays.cpp.o
+
+__/src/UI_Displays.i: __/src/UI_Displays.cpp.i
+.PHONY : __/src/UI_Displays.i
+
+# target to preprocess a source file
+__/src/UI_Displays.cpp.i:
+	cd /home/lsd/Proyectos/TheCrawler/build && $(MAKE) $(MAKESILENT) -f inc/CMakeFiles/Game.dir/build.make inc/CMakeFiles/Game.dir/__/src/UI_Displays.cpp.i
+.PHONY : __/src/UI_Displays.cpp.i
+
+__/src/UI_Displays.s: __/src/UI_Displays.cpp.s
+.PHONY : __/src/UI_Displays.s
+
+# target to generate assembly for a file
+__/src/UI_Displays.cpp.s:
+	cd /home/lsd/Proyectos/TheCrawler/build && $(MAKE) $(MAKESILENT) -f inc/CMakeFiles/Game.dir/build.make inc/CMakeFiles/Game.dir/__/src/UI_Displays.cpp.s
+.PHONY : __/src/UI_Displays.cpp.s
+
+__/src/UI_Inputs.o: __/src/UI_Inputs.cpp.o
+.PHONY : __/src/UI_Inputs.o
+
+# target to build an object file
+__/src/UI_Inputs.cpp.o:
+	cd /home/lsd/Proyectos/TheCrawler/build && $(MAKE) $(MAKESILENT) -f inc/CMakeFiles/Game.dir/build.make inc/CMakeFiles/Game.dir/__/src/UI_Inputs.cpp.o
+.PHONY : __/src/UI_Inputs.cpp.o
+
+__/src/UI_Inputs.i: __/src/UI_Inputs.cpp.i
+.PHONY : __/src/UI_Inputs.i
+
+# target to preprocess a source file
+__/src/UI_Inputs.cpp.i:
+	cd /home/lsd/Proyectos/TheCrawler/build && $(MAKE) $(MAKESILENT) -f inc/CMakeFiles/Game.dir/build.make inc/CMakeFiles/Game.dir/__/src/UI_Inputs.cpp.i
+.PHONY : __/src/UI_Inputs.cpp.i
+
+__/src/UI_Inputs.s: __/src/UI_Inputs.cpp.s
+.PHONY : __/src/UI_Inputs.s
+
+# target to generate assembly for a file
+__/src/UI_Inputs.cpp.s:
+	cd /home/lsd/Proyectos/TheCrawler/build && $(MAKE) $(MAKESILENT) -f inc/CMakeFiles/Game.dir/build.make inc/CMakeFiles/Game.dir/__/src/UI_Inputs.cpp.s
+.PHONY : __/src/UI_Inputs.cpp.s
+
 __/src/Ui.o: __/src/Ui.cpp.o
 .PHONY : __/src/Ui.o
 
@@ -376,6 +424,12 @@ help:
 	@echo "... __/src/Roll.o"
 	@echo "... __/src/Roll.i"
 	@echo "... __/src/Roll.s"
+	@echo "... __/src/UI_Displays.o"
+	@echo "... __/src/UI_Displays.i"
+	@echo "... __/src/UI_Displays.s"
+	@echo "... __/src/UI_Inputs.o"
+	@echo "... __/src/UI_Inputs.i"
+	@echo "... __/src/UI_Inputs.s"
 	@echo "... __/src/Ui.o"
 	@echo "... __/src/Ui.i"
 	@echo "... __/src/Ui.s"

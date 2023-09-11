@@ -16,8 +16,10 @@ void Inventory::removeItem(unsigned int index)
 	delete this->cItems[index];
 	this->cItems.erase(cItems.begin()+index);
 }
-String Inventory::to_string()
+std::string Inventory::to_string()
 {
 	std::string s=std::to_string(cItems.size())+"\n";
+	for(int i=0;i<cItems.size();i++)
+		s+=cItems[i]->getTag()+"\n";
 	return s;
 }

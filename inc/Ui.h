@@ -30,6 +30,7 @@ public:
 	void createNewCharacter();
 	//Posts system
 	void addPost(std::string text,unsigned short int color=0);
+	void displayPosts();
 	//Menus
 	char menuStart();
 	char menuPause();
@@ -37,7 +38,7 @@ public:
 	void displayStatus(std::string character);
 	void displayStats(WINDOW* win,unsigned int y,unsigned int x,unsigned short int stats[]);
 	void displaySkills(WINDOW* win,unsigned int y,unsigned int x,unsigned short int skills[]);
-	void displayPosts();
+	void displayInventory(std::string inventory);
 	//Inputs
 	void makeTerminalNormal();
 	void makeTerminalGame();
