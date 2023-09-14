@@ -56,13 +56,13 @@ void Ui::displayInventory(std::string inventory)
 	inventory.erase(0,inventory.find('\n')+1);
 	if(!size)
 	{
-		addPost("Tu inventario esta vacio.");
+		this->cPost.addPost("Tu inventario esta vacio.");
 	}else
 	{
-		addPost("Inventario:");
+		this->cPost.addPost("Inventario:");
 		for(int i=0;i<size;i++)
 		{
-			addPost(std::to_string(i+1)+"]"+inventory.substr(0,inventory.find('\n')));
+			this->cPost.addPost(std::to_string(i+1)+"]"+inventory.substr(0,inventory.find('\n')));
 			inventory.erase(0,inventory.find('\n')+1);
 		}
 	}	

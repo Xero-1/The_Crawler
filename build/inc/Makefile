@@ -154,6 +154,30 @@ __/src/Armor.cpp.s:
 	cd /home/lsd/Proyectos/TheCrawler/build && $(MAKE) $(MAKESILENT) -f inc/CMakeFiles/Game.dir/build.make inc/CMakeFiles/Game.dir/__/src/Armor.cpp.s
 .PHONY : __/src/Armor.cpp.s
 
+__/src/Camera.o: __/src/Camera.cpp.o
+.PHONY : __/src/Camera.o
+
+# target to build an object file
+__/src/Camera.cpp.o:
+	cd /home/lsd/Proyectos/TheCrawler/build && $(MAKE) $(MAKESILENT) -f inc/CMakeFiles/Game.dir/build.make inc/CMakeFiles/Game.dir/__/src/Camera.cpp.o
+.PHONY : __/src/Camera.cpp.o
+
+__/src/Camera.i: __/src/Camera.cpp.i
+.PHONY : __/src/Camera.i
+
+# target to preprocess a source file
+__/src/Camera.cpp.i:
+	cd /home/lsd/Proyectos/TheCrawler/build && $(MAKE) $(MAKESILENT) -f inc/CMakeFiles/Game.dir/build.make inc/CMakeFiles/Game.dir/__/src/Camera.cpp.i
+.PHONY : __/src/Camera.cpp.i
+
+__/src/Camera.s: __/src/Camera.cpp.s
+.PHONY : __/src/Camera.s
+
+# target to generate assembly for a file
+__/src/Camera.cpp.s:
+	cd /home/lsd/Proyectos/TheCrawler/build && $(MAKE) $(MAKESILENT) -f inc/CMakeFiles/Game.dir/build.make inc/CMakeFiles/Game.dir/__/src/Camera.cpp.s
+.PHONY : __/src/Camera.cpp.s
+
 __/src/Character.o: __/src/Character.cpp.o
 .PHONY : __/src/Character.o
 
@@ -273,6 +297,78 @@ __/src/Item.s: __/src/Item.cpp.s
 __/src/Item.cpp.s:
 	cd /home/lsd/Proyectos/TheCrawler/build && $(MAKE) $(MAKESILENT) -f inc/CMakeFiles/Game.dir/build.make inc/CMakeFiles/Game.dir/__/src/Item.cpp.s
 .PHONY : __/src/Item.cpp.s
+
+__/src/Map.o: __/src/Map.cpp.o
+.PHONY : __/src/Map.o
+
+# target to build an object file
+__/src/Map.cpp.o:
+	cd /home/lsd/Proyectos/TheCrawler/build && $(MAKE) $(MAKESILENT) -f inc/CMakeFiles/Game.dir/build.make inc/CMakeFiles/Game.dir/__/src/Map.cpp.o
+.PHONY : __/src/Map.cpp.o
+
+__/src/Map.i: __/src/Map.cpp.i
+.PHONY : __/src/Map.i
+
+# target to preprocess a source file
+__/src/Map.cpp.i:
+	cd /home/lsd/Proyectos/TheCrawler/build && $(MAKE) $(MAKESILENT) -f inc/CMakeFiles/Game.dir/build.make inc/CMakeFiles/Game.dir/__/src/Map.cpp.i
+.PHONY : __/src/Map.cpp.i
+
+__/src/Map.s: __/src/Map.cpp.s
+.PHONY : __/src/Map.s
+
+# target to generate assembly for a file
+__/src/Map.cpp.s:
+	cd /home/lsd/Proyectos/TheCrawler/build && $(MAKE) $(MAKESILENT) -f inc/CMakeFiles/Game.dir/build.make inc/CMakeFiles/Game.dir/__/src/Map.cpp.s
+.PHONY : __/src/Map.cpp.s
+
+__/src/Menu.o: __/src/Menu.cpp.o
+.PHONY : __/src/Menu.o
+
+# target to build an object file
+__/src/Menu.cpp.o:
+	cd /home/lsd/Proyectos/TheCrawler/build && $(MAKE) $(MAKESILENT) -f inc/CMakeFiles/Game.dir/build.make inc/CMakeFiles/Game.dir/__/src/Menu.cpp.o
+.PHONY : __/src/Menu.cpp.o
+
+__/src/Menu.i: __/src/Menu.cpp.i
+.PHONY : __/src/Menu.i
+
+# target to preprocess a source file
+__/src/Menu.cpp.i:
+	cd /home/lsd/Proyectos/TheCrawler/build && $(MAKE) $(MAKESILENT) -f inc/CMakeFiles/Game.dir/build.make inc/CMakeFiles/Game.dir/__/src/Menu.cpp.i
+.PHONY : __/src/Menu.cpp.i
+
+__/src/Menu.s: __/src/Menu.cpp.s
+.PHONY : __/src/Menu.s
+
+# target to generate assembly for a file
+__/src/Menu.cpp.s:
+	cd /home/lsd/Proyectos/TheCrawler/build && $(MAKE) $(MAKESILENT) -f inc/CMakeFiles/Game.dir/build.make inc/CMakeFiles/Game.dir/__/src/Menu.cpp.s
+.PHONY : __/src/Menu.cpp.s
+
+__/src/Post.o: __/src/Post.cpp.o
+.PHONY : __/src/Post.o
+
+# target to build an object file
+__/src/Post.cpp.o:
+	cd /home/lsd/Proyectos/TheCrawler/build && $(MAKE) $(MAKESILENT) -f inc/CMakeFiles/Game.dir/build.make inc/CMakeFiles/Game.dir/__/src/Post.cpp.o
+.PHONY : __/src/Post.cpp.o
+
+__/src/Post.i: __/src/Post.cpp.i
+.PHONY : __/src/Post.i
+
+# target to preprocess a source file
+__/src/Post.cpp.i:
+	cd /home/lsd/Proyectos/TheCrawler/build && $(MAKE) $(MAKESILENT) -f inc/CMakeFiles/Game.dir/build.make inc/CMakeFiles/Game.dir/__/src/Post.cpp.i
+.PHONY : __/src/Post.cpp.i
+
+__/src/Post.s: __/src/Post.cpp.s
+.PHONY : __/src/Post.s
+
+# target to generate assembly for a file
+__/src/Post.cpp.s:
+	cd /home/lsd/Proyectos/TheCrawler/build && $(MAKE) $(MAKESILENT) -f inc/CMakeFiles/Game.dir/build.make inc/CMakeFiles/Game.dir/__/src/Post.cpp.s
+.PHONY : __/src/Post.cpp.s
 
 __/src/Roll.o: __/src/Roll.cpp.o
 .PHONY : __/src/Roll.o
@@ -406,6 +502,9 @@ help:
 	@echo "... __/src/Armor.o"
 	@echo "... __/src/Armor.i"
 	@echo "... __/src/Armor.s"
+	@echo "... __/src/Camera.o"
+	@echo "... __/src/Camera.i"
+	@echo "... __/src/Camera.s"
 	@echo "... __/src/Character.o"
 	@echo "... __/src/Character.i"
 	@echo "... __/src/Character.s"
@@ -421,6 +520,15 @@ help:
 	@echo "... __/src/Item.o"
 	@echo "... __/src/Item.i"
 	@echo "... __/src/Item.s"
+	@echo "... __/src/Map.o"
+	@echo "... __/src/Map.i"
+	@echo "... __/src/Map.s"
+	@echo "... __/src/Menu.o"
+	@echo "... __/src/Menu.i"
+	@echo "... __/src/Menu.s"
+	@echo "... __/src/Post.o"
+	@echo "... __/src/Post.i"
+	@echo "... __/src/Post.s"
 	@echo "... __/src/Roll.o"
 	@echo "... __/src/Roll.i"
 	@echo "... __/src/Roll.s"

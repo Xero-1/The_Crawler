@@ -15,7 +15,8 @@ Ui::Ui()
 	init_pair(int(MY_COLORS::YELLOW),COLOR_YELLOW,COLOR_BLACK);
 	refresh();
 	this->winStatus=newwin(getmaxy(stdscr),30,0,getmaxx(stdscr)-30);
-	this->winPost=newwin(getmaxy(stdscr),getmaxx(stdscr)-30,0,0);
+	this->cCamera.setWindow(newwin(getmaxy(stdscr)-6,getmaxx(stdscr)-30,0,0));
+	this->cPost.setWindow(newwin(5,getmaxx(stdscr)-30,getmaxy(stdscr)-5,0));
 }
 Ui::~Ui()
 {
@@ -164,57 +165,10 @@ void Ui::createNewCharacter()
 	file<<gold<<"\n";
 	file.close();
 }
-//Menus
-char Ui::menuStart()
+//Camera system
+void Ui::displayCamera()
 {
-	mvprintw(getmaxy(stdscr)-1,0,"Basado en las reglas de VIEJA ESCUELA:el juego de rol");
-	WINDOW* win=newwin(8,22,getmaxy(stdscr)/2-4,getmaxx(stdscr)/2-11);
-	box(win,0,0);
-	mvwprintw(win,0,5,"THE CRAWLER");
-	mvwprintw(win,1,3,"Crawl baby crawl");
-	mvwprintw(win,3,1,"1]NUEVA PARTIDA");
-	mvwprintw(win,4,1,"2]CARGAR PARTIDA");
-	mvwprintw(win,5,1,"3]SALIR");
-	wrefresh(win);
-	delwin(win);
-	return getch();
-}
-char Ui::menuPause()
-{
-	WINDOW* win=newwin(5,22,getmaxy(stdscr)/2-2,getmaxx(stdscr)/2-11);
-	box(win,0,0);
-	mvwprintw(win,0,6,"PAUSA");
-	mvwprintw(win,1,1,"1]CONTINUAR");
-	mvwprintw(win,2,1,"2]OPCIONES");
-	mvwprintw(win,3,1,"3]SALIR");
-	wrefresh(win);
-	delwin(win);
-	return getch();
-}
-//Post system
-void Ui::addPost(std::string text,unsigned short int color)
-{
-	Post p;
-	p.COLOR=color;
-	while(!text.empty())
-	{
-		p.TEXT=text.substr(0,getmaxx(winPost));
-		p.COLOR=color;
-		ePosts.push_back(p);
-		text.erase(0,getmaxx(winPost));
-		if(ePosts.size()>getmaxy(winPost)-1)
-			ePosts.erase(ePosts.begin()+0);
-	}
+	box(this->cCamera.getWindow(),0,0);
 
-}
-void Ui::displayPosts()
-{
-	unsigned int size=ePosts.size();
-	for(int i=0;i<size;i++)
-	{
-		wattron(winPost,COLOR_PAIR(ePosts[i].COLOR));
-		mvwprintw(winPost,0+i,0,ePosts[i].TEXT.c_str());
-		wattroff(winPost,COLOR_PAIR(ePosts[i].COLOR));
-	}
-	wrefresh(winPost);
+	wrefresh(this->cCamera.getWindow());
 }

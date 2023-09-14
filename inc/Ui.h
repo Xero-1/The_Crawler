@@ -2,11 +2,11 @@
 #define UI_H
 
 #include <locale.h>
-#include <ncurses.h>
-#include <string>
 #include <fstream>
-#include <vector>
 
+#include "Post.h"
+#include "Menu.h"
+#include "Camera.h"
 #include "Roll.h"
 
 enum class MY_COLORS
@@ -15,11 +15,6 @@ enum class MY_COLORS
 	BLUE,
 	YELLOW
 };
-struct Post
-{
-	std::string TEXT;
-	unsigned short int COLOR;
-};
 
 class Ui
 {
@@ -27,13 +22,11 @@ public:
 	Ui();
 	~Ui();
 	//Functions
+	inline Post& getPost(){return this->cPost;}
+	inline Menu& getMenu(){return this->cMenu;}
 	void createNewCharacter();
-	//Posts system
-	void addPost(std::string text,unsigned short int color=0);
-	void displayPosts();
-	//Menus
-	char menuStart();
-	char menuPause();
+	//Camera system
+	void displayCamera();
 	//Displayers info
 	void displayStatus(std::string character);
 	void displayStats(WINDOW* win,unsigned int y,unsigned int x,unsigned short int stats[]);
@@ -50,8 +43,9 @@ public:
 	void printListStrings(WINDOW* win,unsigned int y,unsigned int x,std::string tittle,std::string list[],unsigned int size);
 private:
 	WINDOW* winStatus;
-	WINDOW* winPost;
-	std::vector<Post> ePosts;
+	Post cPost;
+	Menu cMenu;
+	Camera cCamera;
 };
 
 #endif

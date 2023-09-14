@@ -30,14 +30,15 @@ void Game::menuMain()
 {
 	clear();
 	refresh();
-	switch(cUi.menuStart())
+	cUi.getPost().reset();
+	switch(cUi.getMenu().start())
 	{
 		case '1':
 			newgame();
 			break;
 		case '2':
 			this->bGameover=false;
-			cUi.addPost("<Partida cargada>");
+			cUi.getPost().addPost("<Partida cargada>");
 			cPlayer.load();
 			break;
 		case '3':
@@ -49,8 +50,9 @@ void Game::draw()
 {
 	clear();
 	refresh();
+	cUi.displayCamera();
 	cUi.displayStatus(cPlayer.to_string());
-	cUi.displayPosts();
+	cUi.getPost().display();
 }
 void Game::input()
 {
@@ -83,5 +85,5 @@ void Game::newgame()
 	this->bGameover=false;
 	cUi.createNewCharacter();
 	cPlayer.load();
-	cUi.addPost("Estas vivo.");
+	cUi.getPost().addPost("Estas vivo.");
 }

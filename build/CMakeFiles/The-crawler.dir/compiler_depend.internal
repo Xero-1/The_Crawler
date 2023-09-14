@@ -4,11 +4,14 @@
 CMakeFiles/The-crawler.dir/src/Main.cpp.o
  /home/lsd/Proyectos/TheCrawler/src/Main.cpp
  /home/lsd/Proyectos/TheCrawler/inc/Armor.h
+ /home/lsd/Proyectos/TheCrawler/inc/Camera.h
  /home/lsd/Proyectos/TheCrawler/inc/Character.h
  /home/lsd/Proyectos/TheCrawler/inc/Creature.h
  /home/lsd/Proyectos/TheCrawler/inc/Game.h
  /home/lsd/Proyectos/TheCrawler/inc/Inventory.h
  /home/lsd/Proyectos/TheCrawler/inc/Item.h
+ /home/lsd/Proyectos/TheCrawler/inc/Menu.h
+ /home/lsd/Proyectos/TheCrawler/inc/Post.h
  /home/lsd/Proyectos/TheCrawler/inc/Roll.h
  /home/lsd/Proyectos/TheCrawler/inc/Ui.h
  /home/lsd/Proyectos/TheCrawler/inc/Weapon.h
