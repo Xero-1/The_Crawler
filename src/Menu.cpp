@@ -3,6 +3,7 @@
 Menu::Menu(){}
 Menu::~Menu(){}
 
+//Functions
 char Menu::start()
 {
 	mvprintw(getmaxy(stdscr)-1,0,"Basado en las reglas de VIEJA ESCUELA:el juego de rol");

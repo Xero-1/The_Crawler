@@ -151,8 +151,9 @@ CMakeFiles/The-crawler.dir/src/Main.cpp.o: \
  /usr/include/unctrl.h /usr/include/curses.h \
  /home/lsd/Proyectos/TheCrawler/inc/Menu.h \
  /home/lsd/Proyectos/TheCrawler/inc/Camera.h \
- /home/lsd/Proyectos/TheCrawler/inc/Roll.h \
+ /home/lsd/Proyectos/TheCrawler/inc/Status.h \
  /home/lsd/Proyectos/TheCrawler/inc/Character.h \
+ /home/lsd/Proyectos/TheCrawler/inc/Roll.h \
  /home/lsd/Proyectos/TheCrawler/inc/Creature.h \
  /home/lsd/Proyectos/TheCrawler/inc/Weapon.h \
  /home/lsd/Proyectos/TheCrawler/inc/Item.h \

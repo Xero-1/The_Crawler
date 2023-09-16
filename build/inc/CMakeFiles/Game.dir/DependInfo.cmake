@@ -19,8 +19,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/lsd/Proyectos/TheCrawler/src/Menu.cpp" "inc/CMakeFiles/Game.dir/__/src/Menu.cpp.o" "gcc" "inc/CMakeFiles/Game.dir/__/src/Menu.cpp.o.d"
   "/home/lsd/Proyectos/TheCrawler/src/Post.cpp" "inc/CMakeFiles/Game.dir/__/src/Post.cpp.o" "gcc" "inc/CMakeFiles/Game.dir/__/src/Post.cpp.o.d"
   "/home/lsd/Proyectos/TheCrawler/src/Roll.cpp" "inc/CMakeFiles/Game.dir/__/src/Roll.cpp.o" "gcc" "inc/CMakeFiles/Game.dir/__/src/Roll.cpp.o.d"
-  "/home/lsd/Proyectos/TheCrawler/src/UI_Displays.cpp" "inc/CMakeFiles/Game.dir/__/src/UI_Displays.cpp.o" "gcc" "inc/CMakeFiles/Game.dir/__/src/UI_Displays.cpp.o.d"
-  "/home/lsd/Proyectos/TheCrawler/src/UI_Inputs.cpp" "inc/CMakeFiles/Game.dir/__/src/UI_Inputs.cpp.o" "gcc" "inc/CMakeFiles/Game.dir/__/src/UI_Inputs.cpp.o.d"
+  "/home/lsd/Proyectos/TheCrawler/src/Status.cpp" "inc/CMakeFiles/Game.dir/__/src/Status.cpp.o" "gcc" "inc/CMakeFiles/Game.dir/__/src/Status.cpp.o.d"
   "/home/lsd/Proyectos/TheCrawler/src/Ui.cpp" "inc/CMakeFiles/Game.dir/__/src/Ui.cpp.o" "gcc" "inc/CMakeFiles/Game.dir/__/src/Ui.cpp.o.d"
   "/home/lsd/Proyectos/TheCrawler/src/Weapon.cpp" "inc/CMakeFiles/Game.dir/__/src/Weapon.cpp.o" "gcc" "inc/CMakeFiles/Game.dir/__/src/Weapon.cpp.o.d"
   )

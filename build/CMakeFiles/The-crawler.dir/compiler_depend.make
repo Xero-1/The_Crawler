@@ -12,6 +12,7 @@ CMakeFiles/The-crawler.dir/src/Main.cpp.o: /home/lsd/Proyectos/TheCrawler/src/Ma
   /home/lsd/Proyectos/TheCrawler/inc/Menu.h \
   /home/lsd/Proyectos/TheCrawler/inc/Post.h \
   /home/lsd/Proyectos/TheCrawler/inc/Roll.h \
+  /home/lsd/Proyectos/TheCrawler/inc/Status.h \
   /home/lsd/Proyectos/TheCrawler/inc/Ui.h \
   /home/lsd/Proyectos/TheCrawler/inc/Weapon.h \
   /usr/include/alloca.h \
@@ -387,9 +388,7 @@ CMakeFiles/The-crawler.dir/src/Main.cpp.o: /home/lsd/Proyectos/TheCrawler/src/Ma
 
 /usr/include/bits/pthreadtypes-arch.h:
 
-/home/lsd/Proyectos/TheCrawler/inc/Menu.h:
-
-/usr/include/c++/13.2.1/backward/binders.h:
+/usr/include/bits/pthread_stack_min-dynamic.h:
 
 /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/os_defines.h:
 
@@ -415,10 +414,6 @@ CMakeFiles/The-crawler.dir/src/Main.cpp.o: /home/lsd/Proyectos/TheCrawler/src/Ma
 
 /usr/include/c++/13.2.1/bits/basic_string.h:
 
-/usr/include/c++/13.2.1/bits/concept_check.h:
-
-/usr/include/bits/byteswap.h:
-
 /usr/include/c++/13.2.1/debug/assertions.h:
 
 /usr/include/c++/13.2.1/bits/string_view.tcc:
@@ -427,7 +422,13 @@ CMakeFiles/The-crawler.dir/src/Main.cpp.o: /home/lsd/Proyectos/TheCrawler/src/Ma
 
 /home/lsd/Proyectos/TheCrawler/inc/Inventory.h:
 
-/usr/include/bits/pthread_stack_min-dynamic.h:
+/home/lsd/Proyectos/TheCrawler/inc/Menu.h:
+
+/usr/include/c++/13.2.1/backward/binders.h:
+
+/usr/include/bits/byteswap.h:
+
+/usr/include/c++/13.2.1/bits/concept_check.h:
 
 /usr/include/c++/13.2.1/bits/utility.h:
 
@@ -471,6 +472,8 @@ CMakeFiles/The-crawler.dir/src/Main.cpp.o: /home/lsd/Proyectos/TheCrawler/src/Ma
 
 /usr/include/bits/types/clock_t.h:
 
+/home/lsd/Proyectos/TheCrawler/inc/Status.h:
+
 /usr/include/bits/types/__fpos_t.h:
 
 /usr/include/asm-generic/errno.h:
@@ -501,11 +504,11 @@ CMakeFiles/The-crawler.dir/src/Main.cpp.o: /home/lsd/Proyectos/TheCrawler/src/Ma
 
 /usr/include/bits/errno.h:
 
-/usr/include/bits/types/mbstate_t.h:
-
 /usr/include/bits/floatn.h:
 
 /usr/include/bits/libc-header-start.h:
+
+/usr/include/bits/types/mbstate_t.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/stdint.h:
 
@@ -524,6 +527,10 @@ CMakeFiles/The-crawler.dir/src/Main.cpp.o: /home/lsd/Proyectos/TheCrawler/src/Ma
 /usr/include/bits/waitflags.h:
 
 /usr/include/bits/types/struct_timespec.h:
+
+/usr/include/c++/13.2.1/bits/predefined_ops.h:
+
+/usr/include/bits/wchar.h:
 
 /usr/include/bits/types/timer_t.h:
 
@@ -566,6 +573,14 @@ CMakeFiles/The-crawler.dir/src/Main.cpp.o: /home/lsd/Proyectos/TheCrawler/src/Ma
 /usr/include/bits/floatn-common.h:
 
 /usr/include/c++/13.2.1/bits/ios_base.h:
+
+/usr/include/c++/13.2.1/bits/streambuf_iterator.h:
+
+/usr/include/c++/13.2.1/bits/stl_iterator_base_funcs.h:
+
+/usr/include/bits/setjmp.h:
+
+/usr/include/c++/13.2.1/bits/exception.h:
 
 /usr/include/c++/13.2.1/cstddef:
 
@@ -619,10 +634,6 @@ CMakeFiles/The-crawler.dir/src/Main.cpp.o: /home/lsd/Proyectos/TheCrawler/src/Ma
 
 /usr/include/c++/13.2.1/bits/postypes.h:
 
-/usr/include/bits/wchar.h:
-
-/usr/include/c++/13.2.1/bits/predefined_ops.h:
-
 /usr/include/c++/13.2.1/bits/requires_hosted.h:
 
 /usr/include/c++/13.2.1/bits/vector.tcc:
@@ -636,11 +647,3 @@ CMakeFiles/The-crawler.dir/src/Main.cpp.o: /home/lsd/Proyectos/TheCrawler/src/Ma
 /usr/include/c++/13.2.1/bits/stl_vector.h:
 
 /usr/include/c++/13.2.1/bits/stl_construct.h:
-
-/usr/include/c++/13.2.1/bits/streambuf_iterator.h:
-
-/usr/include/bits/setjmp.h:
-
-/usr/include/c++/13.2.1/bits/exception.h:
-
-/usr/include/c++/13.2.1/bits/stl_iterator_base_funcs.h:

@@ -12,6 +12,7 @@ void Game::init()
 	this->bPlay=true;
 	this->bGameover=true;
 	srand(time(NULL));
+	cUi.getStatus().setCharacter(&cPlayer);
 
 	Weapon w;
 	w.setName("Espada corta");
@@ -50,8 +51,8 @@ void Game::draw()
 {
 	clear();
 	refresh();
-	cUi.displayCamera();
-	cUi.displayStatus(cPlayer.to_string());
+	cUi.getCamera().display();
+	cUi.getStatus().display();
 	cUi.getPost().display();
 }
 void Game::input()

@@ -14,13 +14,12 @@ Ui::Ui()
 	init_pair(int(MY_COLORS::BLUE),COLOR_BLUE,COLOR_BLACK);
 	init_pair(int(MY_COLORS::YELLOW),COLOR_YELLOW,COLOR_BLACK);
 	refresh();
-	this->winStatus=newwin(getmaxy(stdscr),30,0,getmaxx(stdscr)-30);
+	this->cStatus.setWindow(newwin(getmaxy(stdscr),30,0,getmaxx(stdscr)-30));
 	this->cCamera.setWindow(newwin(getmaxy(stdscr)-6,getmaxx(stdscr)-30,0,0));
 	this->cPost.setWindow(newwin(5,getmaxx(stdscr)-30,getmaxy(stdscr)-5,0));
 }
 Ui::~Ui()
 {
-	delwin(winStatus);
 	endwin();
 }
 
@@ -35,8 +34,6 @@ void Ui::createNewCharacter()
 	float mpMax=0;
 	float mpCurrent=0;
 	unsigned int movement=0;
-	unsigned short int stats[6]={0};
-	unsigned short int skills[6]={0};
 	unsigned int defence=0;
 	unsigned int attack=0;
 	unsigned int instinct=0;
@@ -52,8 +49,8 @@ void Ui::createNewCharacter()
 	{
 		clearPart(stdscr,4,1,11,30);
 		for(int i=0;i<6;i++)
-			stats[i]=roll(3,6,0);
-		displayStats(stdscr,3,1,stats);
+			this->cStatus.getCharacter()->getStats()[i]=roll(3,6,0);
+		this->cStatus.displayStats(stdscr,3,1);
 	}while(getConfirmation(stdscr,11,1,"¿Tirar denuevo?y/n "));
 	/////RACE/////
 	std::string racesNames[]={"Elfo","Enano","Mediano","Humano"};
@@ -105,11 +102,14 @@ void Ui::createNewCharacter()
 			break;
 	}
 	/////SKILLS/////
+	unsigned short int skills[6]={0};
 	unsigned short int skillPoints=4,optSkill;
+	for(int i=0;i<6;i++)
+		this->cStatus.getCharacter()->getSkills()[i]=skills[i];
 	do
 	{
 		clearPart(stdscr,3,60,11,80);
-		displaySkills(stdscr,3,60,skills);
+		this->cStatus.displaySkills(stdscr,3,60);
 		optSkill=getNumber(stdscr,11,60,"Elección= ");
 		if(optSkill!=0 && optSkill<=6)
 		{
@@ -119,9 +119,14 @@ void Ui::createNewCharacter()
 				skills[optSkill]=1;
 				skillPoints--;
 			}
+			for(int i=0;i<6;i++)
+				this->cStatus.getCharacter()->getSkills()[i]=skills[i];
 		}
 	}while(skillPoints);
 	/////SETTING HP,MP,GOLD AND LEVEL/////
+	unsigned short int stats[6];
+	for(int i=0;i<6;i++)
+		stats[i]=this->cStatus.getCharacter()->getStats()[i];
 	if(stats[2]>14)//Check if the constitution MOD it's good
 	{
 		stats[2]==18?//Check how much
@@ -165,10 +170,97 @@ void Ui::createNewCharacter()
 	file<<gold<<"\n";
 	file.close();
 }
-//Camera system
-void Ui::displayCamera()
-{
-	box(this->cCamera.getWindow(),0,0);
 
-	wrefresh(this->cCamera.getWindow());
+//Screen manipulation
+void Ui::clearPart(WINDOW* win,unsigned int startY,unsigned int startX,unsigned int endY,unsigned int endX)
+{
+	for(int i=startY;i<=endY;i++)
+		for(int j=startX;j<=endX;j++)
+			mvwaddch(win,i,j,' ');
+	wrefresh(win);
+}
+void Ui::printListStrings(WINDOW* win,unsigned int y,unsigned int x,std::string tittle,std::string list[],unsigned int size)
+{
+	mvwprintw(win,y,x,tittle.c_str());
+	for(int i=0;i<size;i++)
+		mvwprintw(win,y+1+i,x,"%d]%s",i+1,list[i].c_str());
+	wrefresh(win);
+}
+//Displayers
+void Ui::displayInventory(std::string inventory)
+{
+	unsigned int size=std::stoi(inventory.substr(0,inventory.find('\n')));
+	inventory.erase(0,inventory.find('\n')+1);
+	if(!size)
+	{
+		this->cPost.addPost("Tu inventario esta vacio.");
+	}else
+	{
+		this->cPost.addPost("Inventario:");
+		for(int i=0;i<size;i++)
+		{
+			this->cPost.addPost(std::to_string(i+1)+"]"+inventory.substr(0,inventory.find('\n')));
+			inventory.erase(0,inventory.find('\n')+1);
+		}
+	}	
+}
+
+void Ui::makeTerminalNormal()
+{
+	echo();
+	curs_set(TRUE);
+	refresh();
+}
+void Ui::makeTerminalGame()
+{
+	noecho();
+	curs_set(FALSE);
+	refresh();
+}
+std::string Ui::getString(WINDOW* win,unsigned int y,unsigned int x,std::string msg)
+{
+	makeTerminalNormal();
+	char s[1024];
+
+	mvwprintw(win,y,x,msg.c_str());
+	wgetstr(win,s);
+	makeTerminalGame();
+	return s;
+}
+bool Ui::getConfirmation(WINDOW* win,unsigned int y,unsigned int x,std::string msg)
+{
+	makeTerminalNormal();
+	bool b=false;
+	char keyPressed;
+
+	mvwprintw(win,y,x,msg.c_str());
+	do
+	{
+		keyPressed=getch();
+		if(keyPressed=='y' || keyPressed=='Y')
+			b=true;
+	}while(keyPressed!='y' && keyPressed!='Y' && keyPressed!='n' && keyPressed!='N');
+
+	makeTerminalGame();
+	return b;
+}
+unsigned int Ui::getNumber(WINDOW* win,unsigned int y,unsigned int x,std::string msg)
+{
+	makeTerminalNormal();
+	unsigned int i=0;
+	char keyPressed;
+	std::string s;
+
+	mvwprintw(win,y,x,msg.c_str());
+	do
+	{
+		keyPressed=getch();
+		if(keyPressed>=48 && keyPressed<58)
+			s.push_back(keyPressed);
+	}while(keyPressed!='\n');
+	if(!s.empty())
+		i=std::stoi(s);
+
+	makeTerminalGame();
+	return i;
 }

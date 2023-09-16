@@ -6,6 +6,7 @@ Post::~Post()
 	delwin(win);
 }
 
+//Functions
 void Post::reset()
 {
 	this->postsColor.clear();
